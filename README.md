@@ -1,5 +1,5 @@
 ### English
-This repository is to practice the usage of Github actions workflows
+This repository is to practice the usage of Github actions workflows <br>
 I created a password generator program written in Python and its unit test, then I used an Python application predifined Github actions workflow to see how it works <br>
 Link to the TechWorld with Nana Youtube video about Github actions: https://www.youtube.com/watch?v=R8_veQiYBjI
 
