@@ -2,7 +2,7 @@ import random
 import string
 
 
-def generar_clave(longitud, incluir_especiales):
+def generar_clave(longitud, incluir_especiales=True):
     """Genera una contraseña aleatoria."""
     caracteres = string.ascii_letters + string.digits
     if incluir_especiales == True:
@@ -18,7 +18,7 @@ def generar_clave(longitud, incluir_especiales):
     return clave
 
 
-def generar_multiples_claves(num_claves, longitud, incluir_especiales):
+def generar_multiples_claves(num_claves, longitud, incluir_especiales=True):
     """Genera múltiples contraseñas."""
     claves = []
     for _ in range(num_claves):
