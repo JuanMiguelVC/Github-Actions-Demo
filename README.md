@@ -13,7 +13,7 @@ Python testing framework
 
 ## How It Works
 
-### Password generation Python Script
+## Password generation Python Script
 The script generates the number of passwords indicated on the terminal, with the length indicated on the terminal, and including or excluding special characters.
 ![Options to configure on the terminal](./assets/password-generator-options.png)
 
@@ -38,7 +38,7 @@ Once the script is executed, the output will be like the following
 2. Locate password_generator.py
 3. Right-click the file and choose Run Python File in Terminal
 
-### Github Actions workflow
+## Github Actions workflow
 After committing to the repository, the GitHub Actions workflow is activated. The GitHub Actions workflow is executed on an Ubuntu machine where Python version 3.10 is installed. It installs the dependencies for code quality assurance of the password generator Python script and for running its unit tests. Once the code quality assurance and unit test dependencies are installed, the code quality assurance of the password generator Python script is run, followed by the execution of its unit tests. The entire process is automated.
 
 
