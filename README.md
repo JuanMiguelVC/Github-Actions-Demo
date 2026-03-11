@@ -14,7 +14,7 @@ Python testing framework
 ## How It Works
 
 ### Password generation Python Script
-The application generates the number of passwords indicated on the terminal, with the length indicated on the terminal, and including or excluding special characters.
+The script generates the number of passwords indicated on the terminal, with the length indicated on the terminal, and including or excluding special characters.
 ![Options to configure on the terminal](./assets/password-generator-options.png)
 
 Once the script is executed, the output will be like the following
