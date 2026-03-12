@@ -39,6 +39,6 @@ Once the script is executed, the output will be like the following
 3. Right-click the file and choose Run Python File in Terminal
 
 ### Github Actions workflow
-After committing to the repository, the GitHub Actions workflow is activated. The GitHub Actions workflow is executed on an Ubuntu machine where Python version 3.10 is installed. It installs the dependencies for code quality assurance of the password generator Python script and for running its unit tests. Once the code quality assurance and unit test dependencies are installed, the code quality assurance of the password generator Python script is run, followed by the execution of its unit tests. The entire process is automated.
+After committing to the repository, the GitHub Actions workflow is activated. The GitHub Actions workflow is executed on an Ubuntu machine where Python version 3.13 is installed. It installs the dependencies for code quality assurance of the password generator Python script and for running its unit tests. Once the code quality assurance and unit test dependencies are installed, the code quality assurance of the password generator Python script is run, followed by the execution of its unit tests. It is followed by the creation of a Docker image of the application that is pushed to a DockerHub repository
 
 
