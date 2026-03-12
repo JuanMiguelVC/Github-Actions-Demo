@@ -1,44 +1,57 @@
 # Github Actions Demo
-This repository demonstrates the use of GitHub's action workflows. I created a password generator script written in Python and its unit test.
-Next, I used a pre-built Github actions workflow for a Python application, which was modified for this project.
-Link to the TechWorld with Nana YouTube channel video about Github Action: https://www.youtube.com/watch?v=R8_veQiYBjI
+🔐 Password Generator: CI/CD with GitHub Actions & Docker
+This project is a practical demonstration of a modern DevOps workflow. It features a secure password generator written in Python, fully automated through a CI/CD pipeline that handles testing, linting, and deployment to Docker Hub <br>
+Inspired by the following TechWorld with Nana tutorial: https://www.youtube.com/watch?v=R8_veQiYBjI
 
-## Prerequisites
-Have Python 3 installed on your computer
+## 🚀 Key Features
+Language: Developed in Python 3.13 (latest stable version). <br>
+CI/CD Pipeline: Fully automated workflow using GitHub Actions. <br>
+Quality Assurance: Automated Linting and Unit Testing (Pytest) on every push. <br>
+Containerization: Automated Docker image build and push to Docker Hub. <br>
+Versatility: Interactive terminal interface to customize password length, quantity, and special characters. <br>
 
-## ⚙️ Technologies used in this project
-Github Actions 
-Python
-Python testing framework
-
-## How It Works
-
-### Password generation Python Script
-The script generates the number of passwords indicated on the terminal, with the length indicated on the terminal, and including or excluding special characters.
+## 🛠️ How It Works
+Interactive Script
+The script allows users to configure the password generation directly from the terminal. <br>
 ![Options to configure on the terminal](./assets/password-generator-options.png)
-
-Once the script is executed, the output will be like the following
+Sample Output: <br>
 ![Passwords generated](./assets/passwords-generated.png)
 
-## Run the Script
+## 🏃 Run the Project
+Option 1: Run with Docker (Recommended)
+You don't need Python installed! Just run the image directly from Docker Hub: <br>
+```bash
+docker run -it juanmiguelvime/password-generator-python:latest
+```
+Option 2: Run Locally
+Clone the repository.<br>
+Ensure you have Python 3.13 installed.<br>
+Run:
+```bash
+python3 password_generator.py
+```
 
-### Option 1: Run from Terminal
-1. Open the project directory in your terminal.
-2. Run the script with:
-   ```bash
-   python3 password_generator.py
-   ```
-
-### Option 2: Run with PyCharm
+Also you can run the script using PyCharm or Visual Studio Code
+### Run with PyCharm
 1. Open the project folder in PyCharm.
 2. Right-click `password_generator.py` and select **Run 'password_generator'**.
 
-### Option 3: Run with Visual Studio Code
+### Run with Visual Studio Code
 1. Open the project folder
 2. Locate password_generator.py
 3. Right-click the file and choose Run Python File in Terminal
 
-### Github Actions workflow
-After committing to the repository, the GitHub Actions workflow is activated. The GitHub Actions workflow is executed on an Ubuntu machine where Python version 3.13 is installed. It installs the dependencies for code quality assurance of the password generator Python script and for running its unit tests. Once the code quality assurance and unit test dependencies are installed, the code quality assurance of the password generator Python script is run, followed by the execution of its unit tests. It is followed by the creation of a Docker image of the application that is pushed to a DockerHub repository
+## 🤖 CI/CD Pipeline (GitHub Actions)
+The workflow is defined in .github/workflows/ and triggers on every push to the main branch. It follows these stages:
+Environment Setup: Spins up an Ubuntu runner with Python 3.13. <br>
+Linting: Checks code quality and standards. <br>
+Testing: Executes unit tests to ensure script reliability. <br>
+Docker Build & Push: Builds the Docker image using the Dockerfile. <br>
+Pushes the image to Docker Hub with the latest tag. <br>
 
+## ⚙️ Technologies Used
+CI/CD: GitHub Actions (v4+ actions). <br>
+Containerization: Docker & Docker Hub. <br>
+Language: Python 3.13. <br>
+Testing: Pytest / Unittest. <br>
 
