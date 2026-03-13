@@ -11,8 +11,7 @@ Containerization: Automated Docker image build and push to Docker Hub. <br>
 Versatility: Interactive terminal interface to customize password length, quantity, and special characters. <br>
 
 ## 🛠️ How It Works
-Interactive Script
-The script allows users to configure the password generation directly from the terminal. <br>
+The script is interactive, allowing users to configure the password generation directly from the terminal. <br>
 ![Options to configure on the terminal](./assets/password-generator-options.png)
 Sample Output: <br>
 ![Passwords generated](./assets/passwords-generated.png)
@@ -23,6 +22,9 @@ You don't need Python installed! Just run the image directly from Docker Hub: <b
 ```bash
 docker run -it juanmiguelvime/password-generator-python:latest
 ```
+
+Check all the image tags available here: [Python Password Generator Docker Hub](https://hub.docker.com/repository/docker/juanmiguelvc/password-generator-python/tags)
+
 Option 2: Run Locally
 Clone the repository.<br>
 Ensure you have Python 3.13 installed.<br>
